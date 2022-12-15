@@ -25,5 +25,4 @@ An email assistant powered by ChatGPT
 
 
 ## Credit
-[](hello)
-[https://github.com/transitive-bullshit/chatgpt-api](Unofficial-Node.js-API-by-transitive-bullshit-et-al.)
+- [https://github.com/transitive-bullshit/chatgpt-api](Unofficial-Node.js-API-by-transitive-bullshit-et-al.)

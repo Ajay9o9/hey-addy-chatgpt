@@ -1,0 +1,40 @@
+{
+    "manifest_version": 3,
+    "key": "MIIBIjANBgkqhkiG9w0BAQEFAAOCAQ8AMIIBCgKCAQEAnX6+Wdqpma7fmQ9J2W99RX/9W2QLEKvkHWpHxzuQKwFYPvGNagDFajGyDY+0vz0JUSLZSBZok+qz0VIUuaYcU1g3iwYi94Qe/bJ0CMLRp8A6GSoyJkHhgRWDbzS0mSL3WIfKpsoQy3B2uIRLLEb5otMBnJJEOXA2pvUM9gvaQS35kBphdKgBrTCHMsk+Cxzi4i/L7z+whFW1ATrTA4rvbzgo77JlN3JtwemiEgmim3QFTRb6l05tizMVCTtSO/oYq+mmkjZEYXICP2EgNvAjB73mgsJSsBWmNeOWD1ZDOmafhyFEJx3EwNBDZBQl/KDhQ0MvNbuATi0+e4OiLV8z2QIDAQAB",
+    "name": "Email Assistant",
+    "version": "1.0.0",
+    "description": "A.I. Email Assistant Powered by OpenAI",
+    "permissions": ["activeTab", "storage", "identity"],
+    "action": {
+        "default_icon": "assets/icon.png",
+        "default_popup": "login.html"
+    },
+    "content_scripts": [
+        {
+            "matches": [
+            "*://mail.google.com/*",
+            "*://inbox.google.com/*",
+            "http://*/*", "https://*/*"
+            ],
+            "js": [
+            "tooltip.js"
+            ],
+            "css": [
+            "css/tooltip.css"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "icons": {
+        "16": "assets/icon16.png",
+        "48": "assets/icon48.png",
+        "128": "assets/icon128.png"
+    },
+    "background": {
+        "service_worker": "background.js"
+    },
+    "oauth2": {
+        "client_id": "284266859441-d6kuhfsrr4sj63ms585km0m3rbc6i18e.apps.googleusercontent.com",
+        "scopes":["https://www.googleapis.com/auth/gmail.readonly"]
+    }
+}

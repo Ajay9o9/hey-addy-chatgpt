@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="assets/icon.png" />
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="css/style.css">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>Email Assistant</title>
+
+    <script src="cdn-scripts/firebase-app-7-19-1.js"></script>
+    <script src="cdn-scripts/firebase-auth-7-19-1.js"></script>
+    <script src="cdn-scripts/firebaseui-3-5-2.js"></script>
+
+    <script type="text/javascript" src="popup.js"></script>
+
+    <link type="text/css" rel="stylesheet" href="https://cdn.firebase.com/libs/firebaseui/3.5.2/firebaseui.css" />
+</head>
+
+<body>
+
+    <div class="header">
+        <p id="header-text">Hey <mark id="chat-header-text">Addy</mark></p>
+    </div>
+
+    <div class="container-fluid" id="home-container">
+        <div class="row">
+            <!-- <div class="col-md-6 center-elements">
+
+                <img id="home-img" style="width: 50px; height: 50px;" src="assets/people_talking.jpg" alt="People Chatting">
+
+            </div> -->
+            <br/>
+
+            <div class="col-md-12 center-elements">
+                <br/>
+                <br/>
+
+                <!-- <div id="login-loading" class="loader">
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                    <span class="dot"></span>
+                </div> -->
+
+                <div id="sign-in-options"></div>
+
+                <!-- <br> -->
+                <!-- <form id="login-form">
+                    <div class="form-group">
+                        <input type="email" autocomplete="off" class="form-control auth-field" id="email-text-box" aria-describedby="emailHelp"
+                            placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <input type="password" class="form-control auth-field" id="password-text-box" placeholder="Password">
+                    </div>
+                    <div class="form-group">
+                        <p id="error-message-text"></p>
+                    </div>
+                    <button id="login-btn" class="login-button">
+                        Log In
+                    </button>
+                    <br><br>
+                    <p id="sign-up-link-button" class="btn small-text">Don't have an account?<mark class="small-text underline-text transparent-background pointer">Sign Up</mark></p>
+                </form> -->
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
